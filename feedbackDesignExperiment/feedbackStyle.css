@@ -1,0 +1,11 @@
+#play-button {
+  width: 5rem;
+  transition: 2000ms;
+}
+
+#play-button:hover {
+  cursor: wait;
+}
+#play-button:active {
+  width: 30rem;
+}

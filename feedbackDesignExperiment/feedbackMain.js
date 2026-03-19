@@ -22,11 +22,13 @@ function playNote() {
 //playButton.addEventListener("click", playNote);
 
 function startNote() {
-  synth.triggerAttack("C4");
+  synth.triggerAttack("F3");
+  document.body.style.backgroundColor = "blue";
 }
 
 function endNote() {
   synth.triggerRelease();
+  document.body.style.backgroundColor = "white";
 }
 
 playButton.addEventListener("mousedown", startNote);
