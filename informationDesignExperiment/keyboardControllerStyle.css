@@ -96,10 +96,11 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -4px; /* Centers thumb on the track */
-  background-color: #808080;
+  background-color: #2fcbc6; /* This brighter color effectively distinguishes the button from the background color, attracting the user's attention.*/
   border-radius: 0.5rem;
   height: 1rem;
-  width: 1rem;
+  width: 2rem;
+  /* I increased the width of the slider because I thought it would better simulate the shape of the buttons on the tuning equipment in a recording studio.*/
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
