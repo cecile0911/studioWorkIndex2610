@@ -5,6 +5,7 @@
 
 #play-button:hover {
   cursor: wait;
+  /* It was just an experiment with different types of cursors, but I didn't want to choose anything that would feel glitch-like.*/
 }
 #play-button:active {
   width: 30rem;
