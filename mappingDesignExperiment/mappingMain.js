@@ -2,9 +2,12 @@
 
 const stageContainer = document.getElementById("stage-container");
 const circleButton = document.getElementById("circle-button");
-const changeRed = document.getElementById("change-red");
-const changeCornflower = document.getElementById("change-cornflower");
-const changeGreenyellow = document.getElementById("change-greenyellow");
+const colours = ["red", "cornflowerblue", "greenyellow"];
+
+// const changeRed = document.getElementById("change-red");
+// const changeCornflower = document.getElementById("change-cornflower");
+// const changeGreenyellow = document.getElementById("change-greenyellow");
+
 //find stage width
 let stageContainerWidth = stageContainer.offsetWidth;
 console.log(stageContainerWidth);
@@ -14,6 +17,11 @@ console.log(stageContainerHeight);
 
 //set default circle color
 let circleColour = "red";
+//get the value of the range
+const range = document.getElementById("colourRange");
+range.addEventListener("input", () => {
+  circleColour = colours[range.value];
+});
 
 //create the konva stage
 const stage = new Konva.Stage({
@@ -43,14 +51,14 @@ function drawNewCircle() {
 
 circleButton.addEventListener("click", drawNewCircle);
 
-function changeColourRadio(clickEvent) {
-  // find the value of whichever of the radio buttons was clicked
-  let newColour = clickEvent.target.value;
-  //set the new circle colour to that value
-  circleColour = newColour;
-}
+// function changeColourRadio(clickEvent) {
+//   // find the value of whichever of the radio buttons was clicked
+//   let newColour = clickEvent.target.value;
+//   //set the new circle colour to that value
+//   circleColour = newColour;
+// }
 
 //add eventlisteners
-changeRed.addEventListener("click", changeColourRadio);
-changeCornflower.addEventListener("click", changeColourRadio);
-changeGreenyellow.addEventListener("click", changeColourRadio);
+// changeRed.addEventListener("click", changeColourRadio);
+// changeCornflower.addEventListener("click", changeColourRadio);
+// changeGreenyellow.addEventListener("click", changeColourRadio);

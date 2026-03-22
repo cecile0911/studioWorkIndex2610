@@ -8,3 +8,15 @@ main {
   background-color: rgb(255, 191, 118);
   flex: 1;
 }
+/* make sure the guide is aligned with the slider  */
+#colourSlider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+}
+
+#colourRange {
+  width: 100%;
+  max-width: 300px;
+}

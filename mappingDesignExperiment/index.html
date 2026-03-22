@@ -16,7 +16,27 @@
     <main>
       <div class="toolBar"></div>
       <button id="circle-button">draw a new circle</button>
-      <fieldset>
+      <p>Colour settings:</p>
+
+      <div>
+        <!-- I chose "range" type to replace "radio",and use the slider to represent defferent colours-->
+        <!-- I’m not entirely sure about using "step", but it seems that it ensures the range value is an integer, which is exactly what the array needs.-->
+        <input
+          type="range"
+          id="colourRange"
+          min="0"
+          max="2"
+          step="1"
+          value="0"
+        />
+        <label>Colour select</label>
+      </div>
+      <div id="colourSlider">
+        <span>Red</span>
+        <span>Blue</span>
+        <span>Yellow</span>
+      </div>
+      <!-- <fieldset>
         <legend>Pick a new circle colour:</legend>
 
         <div>
@@ -49,7 +69,7 @@
           />
           <label for="change-greenyellow">Greenyellow</label>
         </div>
-      </fieldset>
+      </fieldset> -->
 
       <div class="stageContainer" id="stage-container">
         <div id="konva-stage"></div>
