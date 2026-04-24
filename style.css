@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #0a0a0a;
   color: white;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -14,20 +14,76 @@ main {
   max-width: 800px;
   margin: 0 auto;
 }
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
 h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ccc;
   padding: 1rem 0 0 0;
+}
+.studentId{
+  text-align: center;
+   font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+.studentId:first-of-type {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.studentId:last-of-type {
+  font-size: 0.85rem;
+  color: #888;
 }
 
 section {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #222;
 }
 
 p {
-  padding: 1rem 0;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 ol,
 ul {
   padding: revert;
+}
+.timeline th {
+  background-color: #111;
+  color: #fff;
+}
+
+.timeline tr:nth-child(even) {
+  background-color: #111;
+}
+
+.timeline th,
+.timeline td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+a {
+  color: rgb(180, 140, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
